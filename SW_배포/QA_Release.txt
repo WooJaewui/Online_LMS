@@ -1,0 +1,99 @@
+
+ QA , Release - SW 배포.
+
+
+
+ # 주요 용어 정의.
+
+용어.
+QA( Quality Assurance ) : 목표한 SQ의 품질을 관리하는 일련의 활동.
+SW Release : 개발된 SW에 대한 QA가 완료된 이후, 해당 SW를 배포할 것인지 결정하는 행위.
+Release Note : 신규, 기존 대비 SW의 추가-변경된 사항을 정리한 기술문서.
+Issue : 이미 발생된 의도하지 않은 사건.
+Risk : 현재 기준 발생하지 않은 사건으로, 의도하지 않게 발생할 가능성이 있음.
+
+
+
+ # QA.
+
+QA 정의.
+목표한 SW의 품질을 관리하는 일련의 활동. ( Test의 한 부분이다 )
+목표 품질에 미달한 경우, 이에 대한 대응 방안을 도출하고 적용하여 목표 달성 유도.
+
+QA Process.
+SW 기획 -> 목표 도출 -> 품질 목표 -> 목표 적용 -> 검증 시나리오 -> Test.
+
+QA 지원 시스템 및 산출물.
+PMS : Project 전반에 대한 관리 시스템. ( 일정, 범위 관리, 산출물 관리 지원 )
+Test 관리 시스템 : 전체 Test를 관리하는 시스템. ( Test Case 등록, Test 일정, 시행사, 시험 차수 관리 )
+Issue 관리 시스템 : Issue( Bug ) 등록 및 조치 내역.
+QA 보고서 : QA 업무 활동에 대한 결과 보고서.
+
+Test 관리 시스템.
+TestLink. ( OSS )
+ 
+
+
+ # Issue 관리 시스템.
+
+Risk.
+현재 기분, 발생하지 않은 사건.
+의도하지 않은 사건이 발생할 가능성.
+목표 기능 제공에 대한 예외처리로 대응.
+Issue 대비 상대적 여유 있는 처리 시간.
+
+Issue.
+의도하지 않은 사건.
+이미 발생된 사건.
+장애 대응으로 접근.
+Risk 대비 상대적 시급.
+
+Issue 관리 시스템 개요.
+SW 개발-운영 중에 발생하는 Issue를 관리하기 위한 시스템.
+Issue의 발생부터 담당자 배정, Issue 해결, 후속 관리 등을 지원.
+
+Issue 관리 시스템 적용.
+Issue 발생 -> Issue 확인 -> 장애 결정 -> 현황 등록 -> 장애 수정 -> 진행상황 등록
+-> 장애 검증 -> 검증 결과 등록 -> 적용 완료 -> 적용 결과 등록.
+
+Issue 관리 시스템의 역할.
+Check List : 개발 과정 중 발생하였던 Issue 내용 List Up.
+Re-Validation : 누락 사항의 재점검.
+Risk 진단 : 현재 SW에 대한 잠재적 위험 진단.
+개발 품질 향상 : 개발 시 미진했던 부분 Check & 후속 발전.
+
+
+
+ # SW Release.
+
+SW Release 개요.
+개발된 SW에 대한 QA가 완료된 이후, 해당 SW를 배포할 것인지를 결정하는 행위.
+QA 결과( SW 품질 )와 고객 요구사항의 접점 도출.
+
+Release Process.
+Release 회의 준비( QA 담당자 ) -> 회의소집 -> QA 보고서 작성( Test 결과, 품질 목표 ) 
+-> Release 회의( SW 품질 만족 여부 분석, 배포 여부 결정 ) -> Release 결정 -> Release Note 작성.
+
+Release Note 작성.
+신규 / 기존 대비 SW의 추가, 변경된 사항을 정리한 기술문서.
+신뢰성 확보에 집중, 과도한 기술적 내용 배제.
+QA 담당자가 작성한다.
+
+Release Note 작성 목록.
+기능 항목 : 추가/변경된 기능 소개, 장단점.
+Bug 수정 내역 : 기존에 알려진 Issue의 수정 사항.
+Architecture : Major 변경이 발생한 경우, 해당 SW의 Architecture 변경 내역.
+기타 : 행정적, 법적 변경 사항.
+
+SW Packaging.
+QA( Test ) Build -> 파일 이름 변경 -> Release Build -> 파일, Release Note 등록 -> SW 배포 시스템 등록.
+개발자가 하는 것이 아니라 QA 담당자의 Build로 패키징 후 Release한다.
+
+
+
+
+
+
+
+
+
