@@ -1,0 +1,63 @@
+
+ SW 빌드 시스템 활용 - SW 배포.
+
+
+
+ # 주요 용어 정의.
+
+용어.
+SW 빌드 : 사용자가 설치-실행할 수 있는 형태로 SW를 생성하는 것.
+SW Package : SW를 설치할 수 있는 상태.
+Version 관리 : SW의 변경사항을 관리하기 위한 관리체계.
+형상관리 : SW에 대한 소스 코드의 등록, 변경, Release 등을 종합적으로 관리하는 활동.
+빌드 시스템 : SW를 컴파일, 통합, 압축하여 SW Package를 생성하는 시스템.
+
+
+
+ # Building Rule 설정.
+
+형상 관리 시스템 연동.
+Jenkins -> 새로운 Item -> Item Name 설정 -> project 설정 -> 소스 코드 관리에서 추가( 형상 관리 시스템 ) -> 저장.
+
+Building Command 설정.
+구성 -> Build -> 어떤 방식으로 Build할지 설정하고 빌드 방식을 적어줌 -> Build now 선택. ( Build 성공 시 Success )
+
+
+
+ # SW version 관리 체계.
+
+SW version 관리 개요.
+SW의 발전 과정에 대한 이정표로, 제공하는 기능에 대한 대표 식별자.
+SW의 개선으로 인한 발전 내역을 확인 가능.
+
+SW version 관리체계 주의사항.
+배포 프로세스 : SW version을 적용하였을 때, 인지-활용하기 쉬운 형태.
+Customize 최소화 : 특정 사용자의 요구에 따른 '특별 version' 생성의 최소화.
+변경 프로세스 고려 : version 관리체계 변경 시, 변경 파급 효과 고려.
+이력 관리 편의성 : SW version에 대한 Revision Number의 Mapping.
+
+SW version 관리체계 사례.
+고객에게 배포한 SW 빌드한 날짜, 빌드버전 등을 기록.
+
+
+
+ # 주기적 Building & SW Version 관리 적용.
+
+주기적 Building 설정.
+[분] [시] [일] [월] [주]
+" 0 0 * * * " : 매일 0시 0분에 Build.
+15 * * * * : 매시각 15분마다 Build.
+
+Jenkins 주기적 Building 설정.
+구성 -> 빌드유발 -> Build periodically -> Schedule에 빌드에 관련된 설정을 적음. ( 15 * * * * )
+
+Build 실패시.
+Build History에서 실패된 Build에 Console Output을 통해 문제점을 확인할 수 있다.
+
+
+
+
+
+
+
+

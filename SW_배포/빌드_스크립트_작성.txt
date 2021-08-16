@@ -1,0 +1,54 @@
+
+ 빌드 스크립트 작성 - SW 배포.
+
+
+
+ # 주요 용어 정의.
+
+용어.
+컴파일 : 단일 소스 코드를 컴퓨터가 실행할 수 있도록 변환하는 과정.
+오브젝트 파일 : 소스 코드 컴파일에 의해 생성되는 목적( Object ) 파일.
+링킹( Linking ) : 최종 실행 파일 생성을 위해 오브젝트 파일의 Symbol을 서로 연결하는 과정.
+빌드( Build ) : 특정 SW 전체를 컴파일하여, 목표 SW에 대한 Package를 생성하는 과정.
+makefile : SW 빌드를 위한 컴파일러, 컴파일 옵션, Library Path, Object, Target 등을 명시한 스크립트 파일.
+
+
+
+ # 빌드 스크립트 개요.
+
+빌드 스크립트( Build Script ) 정의.
+목표한 SW를 자동 컴파일, 빌딩, 패키징을 수행하는 툴.
+개발 언어, 운영 플랫폼에 따라 빌드 스크립트를 선택. ( Eclipse, VS 등은 빌드 스크립트를 가지고 있다 )
+
+소스 코드 변환 과정.
+소스 코드 -> Compile -> Object 파일 -> Linkng -> Executable 파일.
+
+빌드 스크립트 적용 시점.
+빌드 담당자가 각각 개발자의 소스 코드를 받아서 하나로 종합할 때 사용한다.
+
+
+
+ # 빌드 스크립트 구성.
+
+makefile 구성. ( shell script )
+CC : 소스 코드를 컴파일 할 수 있는 컴파일 종류 명시.
+CFLAGS : Include File Path 설정, 디버그 옵션 설정.
+LDFLAGS : Include Library Path 설정.
+OBJS : 오브젝트 파일명 리스트( Object File Name List )
+Target : 링킹 후 최종 바이너리 파일명( Binary File Name )
+기타 등등.
+
+makefile 동작 순서.
+comfiler 확인 -> 컴파일 옵션확인( CFLAGS ) -> 라이브러리 확인( LDFLAGS ) -> 소스 코드 확인
+-> 컴파일링( Compiling ) -> 오브젝트 파일 생성 -> 링킹( Linking ) -> 바이너리 파일 생성.
+
+주의사항.
+makefile은 source code와 독립적으로 동작하기 때문에 Object 생성 시 필요한 Header File을 지정해야 된다.
+
+
+
+
+
+
+
+

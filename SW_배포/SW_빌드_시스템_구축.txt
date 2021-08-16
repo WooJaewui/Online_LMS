@@ -1,0 +1,67 @@
+
+ SW 빌드 시스템 구축 - SW 배포.
+
+
+
+ # 주요 용어 정의.
+
+용어.
+SW 빌드 : 사용자가 요청한 SW를 생성하는 행위.
+빌드 시스템 : SW를 생성하기 위한 전용 시스템.
+형상관리 : SW에 대한 소스 코드의 등록, 변경, Release 등을 종합적으로 관리하는 활동.
+OSS : Open Source Software 약자, 공개 SW와 이에 대한 소스 코드 일체.
+Jenkins : OSS기반 SW빌드 시스템 중 하나로, SW 개발조직에서 가장 많이 활용.
+
+
+
+ # SW 빌드 시스템 구축 개요.
+
+SW 빌드 시스템 정의.
+개발된 소스 코드를 Compile, Packaging하여 배포를 위한 SW를 생성하는 시스템.
+자동, 수동 빌드가 가능하며 빌드 결과를 확인 가능.
+
+개발 체계.
+개발자 -> 형상관리 시스템 -> SW 빌드 시스템 -> 사용자.
+
+Jenkins 연동 과정.
+개발자 -> Subversion( 형상관리 시스템 ) -> Jenkins ( SW 빌드 시스템 ) -> Apache. ( Tomcat )
+
+
+
+ # SW 빌드 시스템( Jenkins ) 구축.
+
+젠킨스 빌드 시스템 구축.
+1. Java version 확인. ( 1.8 이상 ) cmd ) java -version.
+2. Jenkins 라이센스 키 다운로드.
+3. Jenkins 설치.
+
+Jenkins 설치.
+Java 설치 경로 확인해서 Path 설정해주기.
+localhost 또는 DomainName 설정해주기.
+
+
+
+ # SW 빌드 시스템 환경 설정.
+
+환경 설정.
+Jenkins 실행하기.
+Jenkins password 설정하기. ( path 경로 찾아가서 암호 확인 후 설정 )
+Jenkins 실행 관련 Plug-in 설치하기.
+계정명, 암호, 이름, 이메일 주소 설정해 주기.
+
+화면 구성.
+새로운 Item : Project를 등록.
+사람 : Jenkins에 접속하는 계정 관리.
+빌드 기록 : 결과 확인.
+Jenkins 관리 : 환경 설정.
+My View : 즐겨 찾기.
+Lockable Resources : 보안 관련.
+
+
+
+
+
+
+
+
+
