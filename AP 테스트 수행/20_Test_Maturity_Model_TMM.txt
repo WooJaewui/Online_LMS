@@ -1,0 +1,59 @@
+
+ TMM Test Maturity Model.
+
+
+
+ # TMM 개요.
+
+TMM의 개념.
+CMM 모델을 참조해 테스트 조직의 성숙도 모델을 만듦.
+조직의 테스트 프로세스가 얼마나 성숙되었는지 측정하는 방법 제시. ( 소프트웨어 테스트 관점 )
+
+CMM Capability Maturity Model.
+소프트웨어 프로세스 성숙도 모델. ( 소프트웨어 개발 관점 )
+
+TMM의 특징.
+CMM과 같은 개념의 성숙도 수준을 가지고 있음.
+테스트 프로세스 향상을 제시한 체계적 접근 방법을 제공.
+CMM과 결합하여 사용될 수 있는 보조적 모델.
+테스트 프로세스의 성숙도 수준을 확인하고 개선 결과를 측정할 수 있는 수단 제공.
+
+성숙도 단계.
+Level 1( Initial ) : 결함 발견 테스트.
+Level 2( Phase Definition ) : 요구사항 검증 테스트.
+Level 3( Integration ) : 품질 측정 테스트.
+Level 4( Management and Measurement ) : 품질 제어 테스트.
+Level 5( Optimization, Defect Prevention and Quality Control ) : 최적화, 예방.
+
+TMM의 성숙도 단계.
+조직의 테스트 프로세스를 성숙도 단계에 따라 5단계로 정의.
+테스트 프로세스 심사 모델로 활용하지 않고 참조 모델로 활용.
+
+TMM과 TMMI.
+TMM에서는 자세한 설명이나 지침이 없음. ( How To 부재 )
+조직 전체의 프로세스 수준만 나타나고, 개선이 필요한 프로세스 영역별 수준은 나타나지 않음.
+테스트 프로세스 구현에는 경험 많은 리더가 필요.
+테스트 조직, 장비, 체계, 베드 등의 테스트 기반 시설에 대한 설명이 부족.
+
+
+
+ # 테스트 프로세스 성숙도 모델.
+
+TCMM Testing Capability Maturity Model.
+다른 모델들보다 많은 부분에서 CMM과 유사.
+
+TIM Test Improvement Model.
+테스트 세부 활동을 세부적으로 파악해 각 활동의 장점은 살리고 약점은 제거하는 기법들을 제시.
+CMM에서 다루지 못하는 테스트 조직에 대한 이슈들을 강조해 개발된 모델.
+
+TPI Test Process Improvement Model.
+테스트 프로세스 개선을 더욱 용이하게 할 수 있도록 고안된 모델.
+조직의 테스트 프로세스 장점과 약점 영역 결정, 프로세스 성숙도 심사, 개선 사항을 제안.
+
+ISO / IED 33063.
+ISO / IEC 29119-2를 기반으로 한 소프트웨어 테스팅 프로세스 심사 국제 표준 모델.
+
+
+
+
+
