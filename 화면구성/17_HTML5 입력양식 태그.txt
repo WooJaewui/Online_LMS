@@ -1,0 +1,95 @@
+
+ HTML5 입력양식 태그.
+
+
+
+ # input 태그.
+
+form 태그.
+사용자 입력을 위한 HTML 양식을 만드는 데 사용.
+input, textarea, button 등을 하위태그로 가진다.
+
+form 태그의 속성.
+accept-charset : 입력데이터에 사용될 문자 인코딩을 지정. ( UTF-8 )
+action : 입력데이터의 전달 위치를 지정. ( url )
+method : 입력데이터의 전달 방식을 선택. ( post, get )
+enctype : 입력데이터를 서버로 보낼 때 인코딩할 방법을 지정. ( post일 때만 사용가능 )
+name : form양식의 이름을 지정.
+novalidate : 입력데이터 전달 시 데이터의 유효성 검사를 하지 않음.
+
+input 태그.
+입력 컨트롤을 선언하기 위해 form 요소 내에서 사용됨.
+
+input type 속성.
+checkbox, button, hidden, text, tel, password 등 데이터를 input하는 형식을 설정.
+<input type="text">와 같이 사용.
+
+
+
+ # textarea, select 태그.
+
+textarea 태그.
+텍스트를 여러 줄 입력해야 될 경우 사용한다.
+
+textarea 속성.
+cols : 너비 지정.
+rows : 높이 지정.
+disabled : 텍스트 영역을 비활성화 함.
+maxlength : 텍스트 영역의 최대 길이 지정.
+placeholder : 텍스트 영역의 예상값을 설명한느 짧은 설명을 지정.
+required : 텍스트 영역 필수 입력 지정.
+
+textarea 사용.
+<textarea rows="3" cols="40" placeholder="값을 입력하세요" ></textarea>
+
+select 태그.
+드랍 다운 목록을 정의.
+
+option 태그.
+목록에서 사용 가능한 옵션을 정의.
+
+optgroup 태그.
+목록의 옵션 그룹 정의.
+
+select 사용.
+<select>
+	<optgroup label="A">
+		<option value="A1">A1 type</option>
+		<option value="A2">A2 type</option>
+	</optgroup>
+	<optgroup label="B">
+		<option value="B1">B1 type</option>
+		<option value="B2">B2 type</option>
+	</optgroup>
+</select>
+
+select 태그 속성.
+autofocus : 페이지가 로드될 때 드랍 다운 목록에 자동으로 포커스가 됨.
+required : 선택할 데이터를 필수 입력해야 함.
+size : 드랍 다운 목록에 표시되는 옵션의 수를 지정.
+
+option 태그 속성.
+disabled : 해당 옵션을 사용 못하게 지정.
+selected : 해당 옵션을 선택된 상태로 드랍 다운 메뉴 지정.
+value : 선택한 옵션의 정보를 서버로 보낼 때 그 값을 지정.
+
+
+
+ # fieldset, legend 태그.
+
+fieldset 사용.
+<form>
+	<fieldset>
+		<legend>타이틀</lgend>
+		<input ~~~ >
+		<input ~~~ >
+	</fieldset>
+</form>
+
+fieldset 속성.
+disabled : 관련 요소 그룹을 비활성화 지정.
+form : field set가 속한 하나 이상의 form을 지정.
+name : field set의 이름을 지정.
+
+
+

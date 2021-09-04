@@ -1,0 +1,90 @@
+
+ HTML 미디어 태그.
+
+
+
+ # 이미지 태그.
+
+<img> 태그.
+HTML 페이지의 이미지를 정의.
+src와 alt의 두 가지 필수 속성을 가짐.
+HTML페이지에 링크가 되여 참조됨.
+참조된 이미지를 위한 공간을 생성함.
+
+사용.
+<img src ="imgFile.jpg" alt="이미지가 없습니다." />
+
+속성.
+src : 이미지의 경로를 지정.
+alt : 이미지가 없을 때 나오는 글자 지정.
+width : 이미지의 너비를 지정. ( 설정을 안하면 이미지의 원본 크기로 나옴 )
+height : 이미지의 높이를 지정. ( 설정을 안하면 이미지의 원본 크기로 나옴 )
+placeholder.it : 설정된 이미지 크기에 맞는 더미 이미지 제공. 
+
+
+
+ # 오디오 태그.
+
+오디오 태그.
+MP3, WAV, OGG 3가지 형식의 파일 지원. ( 브라우저 별로 조금 다를 수 있다 - mp3는 모두 가능 )
+
+XHTML5 사용.
+<audio src="audioFile.mp3" controls="controls" />
+
+HTML5 사용. 
+<audio controls>
+	<source src="audioFile.mp3" type="audio/mpeg">
+</audio>
+
+오디오 포맷별 MIME 타입.
+MP3 : "audio/mpeg"
+OGG : "audio/ogg"
+wav : "audio/wav"
+
+<audio> 속성.
+autoplay : 음악을 자동으로 재생할지 지정.
+controls : 음악 재생 도구를 출력할지 지정.
+loop : 음악을 반복할지 지정.
+muted : 음소거.
+preload : 음악을 재생하기 전에 모두 불러올지 지정.
+src : 음악 파일의 경로 지정.
+
+주의사항.
+source가 여러개 있을경우 첫번째 source를 실행해보고 안되면 두번째 source를 실행한다.
+
+
+
+ # 비디오 태그.
+
+비디오 태그.
+비디오 타입은 MP4, WebM 및 Ogg와 같이 3가지 형식을 지원.
+MP4는 모든 브라우저에서 호환하기 때문에 MP4를 가장 많이 사용한다.
+
+비디오 포맷별 MIME 타입.
+MP4 : "video/mp4"
+WebM : "video/webm"
+Ogg : "video/ogg"
+
+사용.
+<video controls>
+	<source = "videoFile.mp4" type= "video/mp4" >
+</video>
+
+<video> 속성.
+autoplay : 비디오를 자동으로 재생할지 지정.
+controls : 비디오 재생 도구를 출력할지 지정.
+width : 비디오의 너비 지정.
+height : 비디오의 높이 지정.
+loop : 비디오를 반복할지 지정.
+muted : 음소거.
+poster : 비디오를 준비 중일 떄의 이미지 파일 경로 지정.
+preload : 비디오를 재생하기 전에 모두 불러올지 지정.
+src : 비디오 파일의 경로 지정.
+
+주의사항.
+source가 여러개 있을경우 첫번째 source를 실행해보고 안되면 두번째 source를 실행한다.
+
+
+
+
+
