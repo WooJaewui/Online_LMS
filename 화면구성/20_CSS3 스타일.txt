@@ -1,0 +1,83 @@
+
+ CSS3 스타일.
+
+
+
+ # CSS3 단위 및 그라디언트.
+
+단위.
+속성의 값을 지정하기 위하여 단위를 사용한다.
+
+절대 단위.
+고정되어 있는 단위로 장치에 따라 크기 조절이 되지 않음.
+화면 크기가 다양한 장소에서 사용하지 않음.
+cm, mm, in, px, pt, pc 등.
+
+상대 단위.
+다른 길이 등록 정보와 관련된 길이의 지정.
+em, rem 단위는 확장 가능한 레이아웃을 만드는데 실용적이다.
+
+색상 단위.
+이름 : blue, black 등..
+숫자 : #123456 등..
+
+URL 단위.
+이미지 파일이나 폰트 파일을 불러올 때 URL 단위 사용.
+url( )함수를 이용하여 지정.
+
+그라디언트.
+점점 옅어지거나 점점 진해지는 색상을 색을 만드는 기능.
+
+
+
+ # CSS3 속성.
+
+display 속성.
+none : 태그를 화면에서 보이지 않게 적용.
+block : 태그를 block 형식으로 지정.
+inline : 태그를 inline형식으로 지정.
+inline-block : 태그를 inline-block 형식으로 지정.
+
+박스 속성.
+margine, border, padding, content( width, hieght )로 구성되어 있다.
+
+배경 속성.
+background-image : 하나 이상의 배경 이미지로 설정.
+background-position : 배경 이미지의 시작 위치를 설정.
+background-size : 배경 이미지의 크기를 설정.
+background-repeat : 배경 이미지가 반복되는 경우를 설정.
+background-attachment : 배경 이미지가 나머지 페이지와 함께 스크롤 되는지 고정되는지 설정.
+background-color : 배경색을 설정.
+
+폰트 속성.
+font-size : 글자의 크기를 지정.
+font-family : 폰트 종류를 지정.
+font-style : 폰트 기울기 지정.
+font-weight : 폰트 두께 지정.
+text-align : 글자의 정렬 지정.
+
+절대적 좌표.
+요소의 x, y 좌표를 설정해 절대적으로 위치를 지정.
+
+상대적 좌표.
+요소를 입력한 순서대로 상대적으로 위치를 지정.
+
+position 속성.
+static : 태그가 위에서 아래로 순서대로 배치.
+relative : 초기 위치 상태에서 상하좌우로 위치를 이동.
+absolute : 절대적 위치 x, y 좌표를 설정.
+fixed : 화면을 기준으로 절대적 위치 좌표를 설정.
+overflow : 내부의 요소가 부모의 범위를 벗어날 때 어떻게 처리할지 지정.
+hidden : 영역을 벗어나는 부분을 보이지 않게 함.
+scroll : 영역을 벗어나는 부분을 스크롤로 지정.
+
+float 속성.
+상대적 위치를 사용하는 요소만 float 적용가능.
+left : 태그를 왼쪽에 붙임.
+right : 태그를 오른쪽에 붙임.
+
+
+
+
+
+

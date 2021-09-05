@@ -1,0 +1,33 @@
+
+ jQuery 활용.
+
+
+
+ # jQuery UI 위젯.
+
+UI 인터렉션.
+Draggable : 마우스 드래그로 엘리먼트를 이동함.
+Droppable : 엘리먼트 위에 드래그한 엘리먼트를 드롭할 수 있도록 이벤트 감지.
+Resizeable : 엘리먼트의 크기를 변경할 수 있는 UI 제공.
+Selectable : 엘리먼트를 선택할 수 있는 UI를 제공.
+Sortable : 엘리먼트를 정렬할 수 있는 UI를 제공.
+
+위젯.
+Accordion : 아코디언 형태의 UI를 제공.
+Autocomplete : 자동완성 기능과 UI를 제공.
+Button : 엘리먼트 버튼처럼 보이도록 하는 UI를 제공.
+Datepicker : 날짜 선택 도구 UI를 제공.
+Dialog : 알림창 레이어를 띄울 수 있는 UI를 제공.
+Progressbar : 진행 막대 UI를 제공.
+Slider : 슬라이더 막대 형식의 입력도구를 제공.
+Tabs : 탭 메뉴 형식의 UI를 제공.
+
+연동방법.
+jQuery CDN을 먼저 불러온 후 jQuery UI CDN을 불러와야된다.
+
+예제 확인 하기.
+jQuery -> Plugins -> animation -> jQuery Ui Effects Core -> Try a Demo -> 원하는 Function 선택.
+
+
+
+
